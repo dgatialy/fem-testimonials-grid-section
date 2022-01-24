@@ -1,3 +1,104 @@
 @use "abstracts";
 @use "base";
-@use 'layout/main';
+@use "layout/main";
+@use "../../utility/output/card.scss";
+@use "../../utility/output/global.scss";
+
+body {
+  background: #e2e2e2;
+}
+
+main {
+  display: flex;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.card {
+  background: card.$bg-default;
+  border-radius: card.$border-radius-default;
+  padding: card.$spacing-top card.$spacing-right card.$spacing-bottom
+  card.$spacing-left;
+  color: card.$fg-default;
+
+  &.bg-1 {
+    background: card.$bg-1;
+  }
+  &.bg-2 {
+    background: card.$bg-2;
+  }
+  &.bg-3 {
+    background: card.$bg-3;
+  }
+
+  &.onEmphasis {
+    color: card.$fg-on-emphasis-default;
+
+    .profile__verified {
+      color: card.$fg-on-emphasis-subtle;
+    }
+
+    .card__copy {
+      color: card.$fg-on-emphasis-muted;
+    }
+  }
+
+  .profile {
+    display: flex;
+    margin-bottom: global.$spacing-sm;
+    gap: global.$spacing-sm;
+    align-items: center;
+  }
+
+  .profile__image {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: lavender;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .profile__name {
+    font-family: card.$name-font-family;
+    font-weight: card.$name-font-weight;
+    line-height: card.$name-line-height;
+    font-size: card.$name-font-size;
+    letter-spacing: card.$name-letter-spacing;
+    text-transform: card.$name-text-case;
+    text-decoration: card.$name-text-decoration;
+  }
+
+  .profile__verified {
+    font-family: card.$verified-font-family;
+    font-weight: card.$verified-font-weight;
+    line-height: card.$verified-line-height;
+    font-size: card.$verified-font-size;
+    letter-spacing: card.$verified-letter-spacing;
+    text-transform: card.$verified-text-case;
+    text-decoration: card.$verified-text-decoration;
+    color: card.$fg-subtle;
+  }
+
+  .card__title {
+    font-family: card.$title-font-family;
+    font-weight: card.$title-font-weight;
+    line-height: card.$title-line-height;
+    font-size: card.$title-font-size;
+    letter-spacing: card.$title-letter-spacing;
+    text-transform: card.$title-text-case;
+    text-decoration: card.$title-text-decoration;
+    margin-bottom: global.$spacing-md;
+  }
+
+  .card__copy {
+    font-family: card.$copy-font-family;
+    font-weight: card.$copy-font-weight;
+    line-height: card.$copy-line-height;
+    font-size: card.$copy-font-size;
+    letter-spacing: card.$copy-letter-spacing;
+    text-transform: card.$copy-text-case;
+    text-decoration: card.$copy-text-decoration;
+    color: card.$fg-muted;
+  }
+}
