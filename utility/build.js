@@ -66,8 +66,8 @@ function getStyleDictionaryConfig(theme) {
         buildPath: `output/`,
         files: [
           {
-            destination: `${theme}.css`,
-            format: 'css/variables',
+            destination: `${theme}.scss`,
+            format: 'scss/variables',
             selector: `:root`,
             options: {
                 theme: theme
@@ -83,7 +83,7 @@ console.log('Build started...')
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS AND PLATFORMS
 
-;['card'].map(function (theme) {
+;['card', 'global'].map(function (theme) {
   console.log('\n==============================================')
   console.log(`\nProcessing: [${theme}]`)
 

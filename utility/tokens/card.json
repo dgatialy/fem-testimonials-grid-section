@@ -43,6 +43,18 @@
         "value": "#ffffff80",
         "type": "color"
       }
+    },
+    "name": {
+      "value": "#48556A",
+      "type": "color"
+    },
+    "verified": {
+      "value": "#48556a80",
+      "type": "color"
+    },
+    "title": {
+      "value": "#48556A",
+      "type": "color"
     }
   },
   "name": {
@@ -187,7 +199,7 @@
       "type": "borderRadius"
     }
   },
-  "padding": {
+  "spacing": {
     "top": {
       "value": 24,
       "type": "spacing"
