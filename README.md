@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/testimonials-grid-section-using-styledictionary-and-figma-GBkKBFecF)
 - [Live Site](https://goofy-knuth-d47576.netlify.app/)
 - [Figma File](https://www.figma.com/file/s4lYfhYDFI363ISssvk4lp/%5BFEM%5D-Testimonials-grid-section?node-id=0%3A1)
 
