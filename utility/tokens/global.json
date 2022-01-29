@@ -112,6 +112,10 @@
         "value": "#ECF2F8",
         "type": "color"
       }
+    },
+    "canvas": {
+      "value": "#ECF2F8",
+      "type": "color"
     }
   },
   "fontFamilies": {
@@ -139,14 +143,6 @@
     }
   },
   "fontWeights": {
-    "medium": {
-      "value": "Medium",
-      "type": "fontWeights"
-    },
-    "semibold": {
-      "value": "SemiBold",
-      "type": "fontWeights"
-    },
     "barlow-semi-condensed-0": {
       "value": "Medium",
       "type": "fontWeights"
@@ -172,19 +168,11 @@
   },
   "letterSpacing": {
     "0": {
-      "value": "0%",
+      "value": 0,
       "type": "letterSpacing"
     },
     "1": {
-      "value": "-2.2%",
-      "type": "letterSpacing"
-    },
-    "2": {
-      "value": "-0.2%",
-      "type": "letterSpacing"
-    },
-    "3": {
-      "value": "-0.5%",
+      "value": -0.45,
       "type": "letterSpacing"
     }
   },
@@ -205,5 +193,13 @@
       "value": "none",
       "type": "textDecoration"
     }
+  },
+  "stroke 1": {
+    "value": "#ffffff33",
+    "type": "color"
+  },
+  "stroke 2": {
+    "value": "#7b61ff80",
+    "type": "color"
   }
 }

@@ -5,24 +5,92 @@
 @use "../../utility/output/global.scss";
 
 body {
-  background: #e2e2e2;
+  background: global.$colors-canvas;
+  font-family: global.$font-families-barlow-semi-condensed;
+  font-size: global.$font-size-0;
+  display: grid;
+}
+
+footer {
+  justify-self: center;
 }
 
 main {
-  display: flex;
-  margin: 0 auto;
-  width: 800px;
+  display: grid;
+  max-width: 1109px;
+  padding: global.$spacing-2xl;
+
+  align-content: center;
+  justify-self: center;
+
+  grid-template-areas:
+    "c1 c1 c2 c3"
+    "c4 c5 c5 c3";
+  grid-template-columns: repeat(4, 1fr);
+  gap: global.$spacing-lg;
+
+  @include abstracts.mq(large) {
+    grid-template-areas:
+      "c1 c1 c2 c2"
+      "c3 c3 c4 c4"
+      "c3 c3 c5 c5";
+  }
+  @include abstracts.mq(small) {
+    padding: global.$spacing-lg;
+    grid-template-columns: repeat(1, auto);
+    grid-template-areas:
+      "c1"
+      "c2"
+      "c3"
+      "c4"
+      "c5";
+  }
+}
+
+.stroke-1,
+.stroke-2 {
+  border: card.$border-width-default solid card.$stroke-2;
+}
+
+.stroke-2 {
+  border-color: card.$stroke-2;
+}
+
+.c1 {
+  grid-area: c1;
+}
+
+.c2 {
+  grid-area: c2;
+}
+
+.c3 {
+  grid-area: c3;
+}
+
+.c4 {
+  grid-area: c4;
+}
+
+.c5 {
+  grid-area: c5;
 }
 
 .card {
   background: card.$bg-default;
   border-radius: card.$border-radius-default;
   padding: card.$spacing-top card.$spacing-right card.$spacing-bottom
-  card.$spacing-left;
+    card.$spacing-left;
   color: card.$fg-default;
 
   &.bg-1 {
     background: card.$bg-1;
+
+    &.quote {
+      background-image: url("../../images/bg-pattern-quotation.svg");
+      background-repeat: no-repeat;
+      background-position-x: calc(80%);
+    }
   }
   &.bg-2 {
     background: card.$bg-2;
@@ -54,9 +122,11 @@ main {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: lavender;
     overflow: hidden;
     object-fit: cover;
+    flex-shrink: 0;
+    flex-grow: 0;
+    box-sizing: content-box;
   }
 
   .profile__name {

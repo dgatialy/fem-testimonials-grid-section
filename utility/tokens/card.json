@@ -75,7 +75,7 @@
       "type": "other"
     },
     "letterSpacing": {
-      "value": "0%",
+      "value": 0,
       "type": "other"
     },
     "paragraphSpacing": {
@@ -109,7 +109,7 @@
       "type": "other"
     },
     "letterSpacing": {
-      "value": "-2.2%",
+      "value": -0.45,
       "type": "other"
     },
     "paragraphSpacing": {
@@ -143,7 +143,7 @@
       "type": "other"
     },
     "letterSpacing": {
-      "value": "-0.2%",
+      "value": 0,
       "type": "other"
     },
     "paragraphSpacing": {
@@ -177,7 +177,7 @@
       "type": "other"
     },
     "letterSpacing": {
-      "value": "-0.5%",
+      "value": 0,
       "type": "other"
     },
     "paragraphSpacing": {
@@ -215,6 +215,20 @@
     "left": {
       "value": 32,
       "type": "spacing"
+    }
+  },
+  "Stroke 1": {
+    "value": "#ffffff80",
+    "type": "color"
+  },
+  "Stroke 2": {
+    "value": "#7b61ff80",
+    "type": "color"
+  },
+  "borderWidth": {
+    "default": {
+      "value": 2,
+      "type": "borderWidth"
     }
   }
 }

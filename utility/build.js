@@ -28,7 +28,8 @@ StyleDictionaryPackage.registerTransform({
     ].includes(prop.original.type) || [            
         'fontSize',
         'paragraphSpacing',
-        'lineHeight'
+        'lineHeight',
+        'letterSpacing'
       ].includes(prop.attributes.type)
   },
   transformer: function (prop) {        
